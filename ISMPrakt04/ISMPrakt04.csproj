@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F230A0B4-AF55-451D-A13C-FC2E51A9326C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ISMPrakt04</RootNamespace>
+    <AssemblyName>ISMPrakt04</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DoWhile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoWhile.Designer.cs">
+      <DependentUpon>DoWhile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="For1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="For1.Designer.cs">
+      <DependentUpon>For1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="For2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="For2.Designer.cs">
+      <DependentUpon>For2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="For3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="For3.Designer.cs">
+      <DependentUpon>For3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="For4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="For4.Designer.cs">
+      <DependentUpon>For4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="For5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="For5.Designer.cs">
+      <DependentUpon>For5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pi1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pi1.Designer.cs">
+      <DependentUpon>Pi1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pi2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pi2.Designer.cs">
+      <DependentUpon>Pi2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pi3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pi3.Designer.cs">
+      <DependentUpon>Pi3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pi4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pi4.Designer.cs">
+      <DependentUpon>Pi4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="While1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="While1.Designer.cs">
+      <DependentUpon>While1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="While2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="While2.Designer.cs">
+      <DependentUpon>While2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="While3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="While3.Designer.cs">
+      <DependentUpon>While3.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DoWhile.resx">
+      <DependentUpon>DoWhile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="For1.resx">
+      <DependentUpon>For1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="For2.resx">
+      <DependentUpon>For2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="For3.resx">
+      <DependentUpon>For3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="For4.resx">
+      <DependentUpon>For4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="For5.resx">
+      <DependentUpon>For5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pi1.resx">
+      <DependentUpon>Pi1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pi2.resx">
+      <DependentUpon>Pi2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pi3.resx">
+      <DependentUpon>Pi3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pi4.resx">
+      <DependentUpon>Pi4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="While1.resx">
+      <DependentUpon>While1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="While2.resx">
+      <DependentUpon>While2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="While3.resx">
+      <DependentUpon>While3.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ISMPrakt04ClassLib\ISMPrakt04ClassLib.csproj">
+      <Project>{2fb1da03-f9fc-4d87-b95a-30676668129d}</Project>
+      <Name>ISMPrakt04ClassLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_112.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_113.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_114.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_115.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
