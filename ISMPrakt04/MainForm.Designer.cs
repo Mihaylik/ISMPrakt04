@@ -49,6 +49,7 @@ namespace ISMPrakt04
             this.pi2Button = new System.Windows.Forms.Button();
             this.pi3Button = new System.Windows.Forms.Button();
             this.pi4Button = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // mainTasksLabel
@@ -310,12 +311,23 @@ namespace ISMPrakt04
             this.pi4Button.UseVisualStyleBackColor = false;
             this.pi4Button.Click += new System.EventHandler(this.pi4Button_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label2.Location = new System.Drawing.Point(625, 521);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(127, 17);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "Михайлов Дмитро";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(764, 547);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.pi4Button);
             this.Controls.Add(this.pi3Button);
             this.Controls.Add(this.pi2Button);
@@ -367,6 +379,7 @@ namespace ISMPrakt04
         private System.Windows.Forms.Button pi2Button;
         private System.Windows.Forms.Button pi3Button;
         private System.Windows.Forms.Button pi4Button;
+        private System.Windows.Forms.Label label2;
     }
 }
 
