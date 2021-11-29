@@ -28,21 +28,23 @@ namespace ISMPrakt04
             constPi.Text += Math.PI;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void solveRes_Click(object sender, EventArgs e)
         {
+            double resultVall;
             result.Text = "Результат (pi): ";
             Pi2Console pi = new Pi2Console();
             int k = 0;
             try
             {
-                k = int.Parse(textBox3.Text);
+                k = int.Parse(inputIter.Text);
             }
             catch
             {
                 MessageBox.Show("Некоректне значення");
-                textBox3.Text = null;
+                inputIter.Text = null;
             }
-            result.Text += pi.Solve(k);
+            resultVall= pi.Solve(k);
+            result.Text += resultVall;
         }
     }
 }

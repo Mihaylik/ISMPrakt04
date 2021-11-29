@@ -31,7 +31,7 @@ namespace ISMPrakt04
         {
             this.mainTasksLabel = new System.Windows.Forms.Label();
             this.for1Buttton = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.backBox1 = new System.Windows.Forms.TextBox();
             this.fors = new System.Windows.Forms.Label();
             this.for2Buttton = new System.Windows.Forms.Button();
             this.for3Buttton = new System.Windows.Forms.Button();
@@ -43,8 +43,8 @@ namespace ISMPrakt04
             this.while3Button = new System.Windows.Forms.Button();
             this.dowhile = new System.Windows.Forms.Label();
             this.doWhile1Button = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.dopLabel = new System.Windows.Forms.Label();
+            this.backBox2 = new System.Windows.Forms.TextBox();
             this.pi1Button = new System.Windows.Forms.Button();
             this.pi2Button = new System.Windows.Forms.Button();
             this.pi3Button = new System.Windows.Forms.Button();
@@ -77,16 +77,16 @@ namespace ISMPrakt04
             this.for1Buttton.UseVisualStyleBackColor = false;
             this.for1Buttton.Click += new System.EventHandler(this.for1Buttton_Click);
             // 
-            // textBox1
+            // backBox1
             // 
-            this.textBox1.BackColor = System.Drawing.Color.Teal;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(65, 98);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(623, 203);
-            this.textBox1.TabIndex = 2;
+            this.backBox1.BackColor = System.Drawing.Color.Teal;
+            this.backBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.backBox1.Location = new System.Drawing.Point(65, 98);
+            this.backBox1.Multiline = true;
+            this.backBox1.Name = "backBox1";
+            this.backBox1.ReadOnly = true;
+            this.backBox1.Size = new System.Drawing.Size(623, 203);
+            this.backBox1.TabIndex = 2;
             // 
             // fors
             // 
@@ -233,27 +233,27 @@ namespace ISMPrakt04
             this.doWhile1Button.UseVisualStyleBackColor = false;
             this.doWhile1Button.Click += new System.EventHandler(this.doWhile1Button_Click);
             // 
-            // label1
+            // dopLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(307, 320);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(127, 29);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "Додаткові";
+            this.dopLabel.AutoSize = true;
+            this.dopLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.dopLabel.ForeColor = System.Drawing.Color.White;
+            this.dopLabel.Location = new System.Drawing.Point(307, 320);
+            this.dopLabel.Name = "dopLabel";
+            this.dopLabel.Size = new System.Drawing.Size(127, 29);
+            this.dopLabel.TabIndex = 17;
+            this.dopLabel.Text = "Додаткові";
             // 
-            // textBox2
+            // backBox2
             // 
-            this.textBox2.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Location = new System.Drawing.Point(65, 376);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(623, 126);
-            this.textBox2.TabIndex = 18;
+            this.backBox2.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.backBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.backBox2.Location = new System.Drawing.Point(65, 376);
+            this.backBox2.Multiline = true;
+            this.backBox2.Name = "backBox2";
+            this.backBox2.ReadOnly = true;
+            this.backBox2.Size = new System.Drawing.Size(623, 126);
+            this.backBox2.TabIndex = 18;
             // 
             // pi1Button
             // 
@@ -332,7 +332,7 @@ namespace ISMPrakt04
             this.Controls.Add(this.pi3Button);
             this.Controls.Add(this.pi2Button);
             this.Controls.Add(this.pi1Button);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.dopLabel);
             this.Controls.Add(this.doWhile1Button);
             this.Controls.Add(this.dowhile);
             this.Controls.Add(this.while3Button);
@@ -346,8 +346,8 @@ namespace ISMPrakt04
             this.Controls.Add(this.fors);
             this.Controls.Add(this.for1Buttton);
             this.Controls.Add(this.mainTasksLabel);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.backBox1);
+            this.Controls.Add(this.backBox2);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "MainForm";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
@@ -361,7 +361,7 @@ namespace ISMPrakt04
 
         private System.Windows.Forms.Label mainTasksLabel;
         private System.Windows.Forms.Button for1Buttton;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox backBox1;
         private System.Windows.Forms.Label fors;
         private System.Windows.Forms.Button for2Buttton;
         private System.Windows.Forms.Button for3Buttton;
@@ -373,8 +373,8 @@ namespace ISMPrakt04
         private System.Windows.Forms.Button while3Button;
         private System.Windows.Forms.Label dowhile;
         private System.Windows.Forms.Button doWhile1Button;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label dopLabel;
+        private System.Windows.Forms.TextBox backBox2;
         private System.Windows.Forms.Button pi1Button;
         private System.Windows.Forms.Button pi2Button;
         private System.Windows.Forms.Button pi3Button;

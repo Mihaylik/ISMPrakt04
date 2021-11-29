@@ -29,62 +29,62 @@ namespace ISMPrakt04
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.for3Label = new System.Windows.Forms.Label();
+            this.holderA = new System.Windows.Forms.Label();
+            this.holderN = new System.Windows.Forms.Label();
+            this.inputA = new System.Windows.Forms.TextBox();
+            this.inputB = new System.Windows.Forms.TextBox();
             this.result = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.solveRes = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // for3Label
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(86, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(273, 50);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Введіть дробове число A \r\nі ціле число N (> 0)";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.for3Label.AutoSize = true;
+            this.for3Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.for3Label.Location = new System.Drawing.Point(86, 28);
+            this.for3Label.Name = "for3Label";
+            this.for3Label.Size = new System.Drawing.Size(273, 50);
+            this.for3Label.TabIndex = 0;
+            this.for3Label.Text = "Введіть дробове число A \r\nі ціле число N (> 0)";
+            this.for3Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.for3Label.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label2
+            // holderA
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(86, 98);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(26, 25);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "A";
+            this.holderA.AutoSize = true;
+            this.holderA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.holderA.Location = new System.Drawing.Point(86, 98);
+            this.holderA.Name = "holderA";
+            this.holderA.Size = new System.Drawing.Size(26, 25);
+            this.holderA.TabIndex = 1;
+            this.holderA.Text = "A";
             // 
-            // label3
+            // holderN
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(86, 145);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(26, 25);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "N";
+            this.holderN.AutoSize = true;
+            this.holderN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.holderN.Location = new System.Drawing.Point(86, 145);
+            this.holderN.Name = "holderN";
+            this.holderN.Size = new System.Drawing.Size(26, 25);
+            this.holderN.TabIndex = 2;
+            this.holderN.Text = "N";
             // 
-            // textBox1
+            // inputA
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(129, 95);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(216, 30);
-            this.textBox1.TabIndex = 3;
+            this.inputA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.inputA.Location = new System.Drawing.Point(129, 95);
+            this.inputA.Name = "inputA";
+            this.inputA.Size = new System.Drawing.Size(216, 30);
+            this.inputA.TabIndex = 3;
             // 
-            // textBox2
+            // inputB
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2.Location = new System.Drawing.Point(129, 142);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(216, 30);
-            this.textBox2.TabIndex = 4;
+            this.inputB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.inputB.Location = new System.Drawing.Point(129, 142);
+            this.inputB.Name = "inputB";
+            this.inputB.Size = new System.Drawing.Size(216, 30);
+            this.inputB.TabIndex = 4;
             // 
             // result
             // 
@@ -96,17 +96,17 @@ namespace ISMPrakt04
             this.result.TabIndex = 6;
             this.result.Text = "Результат:";
             // 
-            // button1
+            // solveRes
             // 
-            this.button1.BackColor = System.Drawing.Color.Lavender;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(173, 187);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(137, 37);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Порахувати";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.solveRes.BackColor = System.Drawing.Color.Lavender;
+            this.solveRes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.solveRes.Location = new System.Drawing.Point(173, 187);
+            this.solveRes.Name = "solveRes";
+            this.solveRes.Size = new System.Drawing.Size(137, 37);
+            this.solveRes.TabIndex = 5;
+            this.solveRes.Text = "Порахувати";
+            this.solveRes.UseVisualStyleBackColor = false;
+            this.solveRes.Click += new System.EventHandler(this.solveRes_Click);
             // 
             // For3
             // 
@@ -115,12 +115,12 @@ namespace ISMPrakt04
             this.BackColor = System.Drawing.Color.Tan;
             this.ClientSize = new System.Drawing.Size(487, 325);
             this.Controls.Add(this.result);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.solveRes);
+            this.Controls.Add(this.inputB);
+            this.Controls.Add(this.inputA);
+            this.Controls.Add(this.holderN);
+            this.Controls.Add(this.holderA);
+            this.Controls.Add(this.for3Label);
             this.Name = "For3";
             this.Text = "A у степені N за допомогою for";
             this.ResumeLayout(false);
@@ -130,12 +130,12 @@ namespace ISMPrakt04
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label for3Label;
+        private System.Windows.Forms.Label holderA;
+        private System.Windows.Forms.Label holderN;
+        private System.Windows.Forms.TextBox inputA;
+        private System.Windows.Forms.TextBox inputB;
         private System.Windows.Forms.Label result;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button solveRes;
     }
 }

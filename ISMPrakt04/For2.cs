@@ -18,31 +18,28 @@ namespace ISMPrakt04
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void solveRes_Click(object sender, EventArgs e)
         {
+            double resultVall;
             result.Text = "Результат: ";
             ForConsole2 f = new ForConsole2();
             int n=0;
             try
             {
-                n = int.Parse(textBox1.Text);
+                n = int.Parse(inputN.Text);
                 if (n <= 0) Clear("Число повинне бути більше 0");
             }
             catch
             {
                 Clear("Числа введені не коректно");
             }
-            result.Text += Math.Round(f.Solve(n), 3);
+            resultVall = Math.Round(f.Solve(n), 3);
+            result.Text += resultVall;
         }
         void Clear(string m)
         {
             MessageBox.Show(m);
-            textBox1.Text = null;
-        }
-
-        private void result_Click(object sender, EventArgs e)
-        {
-
+            inputN.Text = null;
         }
     }
 }

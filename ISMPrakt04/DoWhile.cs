@@ -25,6 +25,7 @@ namespace ISMPrakt04
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
         }
+        double resultVall;
         int i = 0;
         int[] values = new int[2483647];
         DoWhileConsole dw = new DoWhileConsole();
@@ -36,7 +37,7 @@ namespace ISMPrakt04
             {
                 try
                 {
-                    values[i] = int.Parse(textBox1.Lines[i]);
+                    values[i] = int.Parse(inputArray.Lines[i]);
                     i++;
                 }
                 catch
@@ -57,18 +58,19 @@ namespace ISMPrakt04
                     tmp[i] = values[i];
                     i++;
                 }
-                result.Text += dw.Solve(tmp);
+                resultVall= dw.Solve(tmp);
+                result.Text += resultVall;
             }
         }
         void Clear(string m)
         {
             MessageBox.Show(m);
-            textBox1.Text = null;
+            inputArray.Text = null;
         }
 
         private void textBox1_DoubleClick(object sender, EventArgs e)
         {
-            textBox1.Text = null;
+            inputArray.Text = null;
             for (int k = 0; k < i + 1; k++) values[k] = 0;
             i = 0;
         }

@@ -18,25 +18,28 @@ namespace ISMPrakt04
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void solveRes_Click(object sender, EventArgs e)
         {
+            double resultVallDays, resultVallDistance;
             WholeConsole3 f = new WholeConsole3();
             int p = 0;
             try
             {
-                p = int.Parse(textBox1.Text);
+                p = int.Parse(inputP.Text);
                 if (p <= 0) Clear("Число повинне бути більше 0");
             }
             catch
             {
                 Clear("Числа введені не коректно");
             }
-            result.Text = $"Спортсмен біг {f.Solve(p)[0]} дн. Всього пробіг {Math.Round(f.Solve(p)[1], 3)} км.";
+            resultVallDays = f.Solve(p)[0];
+            resultVallDistance = Math.Round(f.Solve(p)[1], 3);
+            result.Text = $"Спортсмен біг {resultVallDays} дн. Всього пробіг {resultVallDistance} км.";
         }
         void Clear(string m)
         {
             MessageBox.Show(m);
-            textBox1.Text = null;
+            inputP.Text = null;
         }
     }
 }

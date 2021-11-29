@@ -117,7 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label1.Text" xml:space="preserve">
+  <data name="while3Label.Text" xml:space="preserve">
     <value>Спортсмен-лижник почав тренування, пробіг у перший день 10 км. 
 Кожний наступний день він збільшував довжину пробігу на 
 P відсотків від пробігу попереднього дня. За даним P визначати, після якого дня 

@@ -30,22 +30,22 @@ namespace ISMPrakt04
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(While3));
-            this.label2 = new System.Windows.Forms.Label();
+            this.holderP = new System.Windows.Forms.Label();
             this.result = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.solveRes = new System.Windows.Forms.Button();
+            this.inputP = new System.Windows.Forms.TextBox();
+            this.while3Label = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label2
+            // holderP
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(41, 177);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(26, 25);
-            this.label2.TabIndex = 19;
-            this.label2.Text = "P";
+            this.holderP.AutoSize = true;
+            this.holderP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.holderP.Location = new System.Drawing.Point(41, 177);
+            this.holderP.Name = "holderP";
+            this.holderP.Size = new System.Drawing.Size(26, 25);
+            this.holderP.TabIndex = 19;
+            this.holderP.Text = "P";
             // 
             // result
             // 
@@ -56,35 +56,35 @@ namespace ISMPrakt04
             this.result.Size = new System.Drawing.Size(0, 25);
             this.result.TabIndex = 18;
             // 
-            // button1
+            // solveRes
             // 
-            this.button1.BackColor = System.Drawing.Color.Lavender;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(119, 221);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(137, 37);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "Порахувати";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.solveRes.BackColor = System.Drawing.Color.Lavender;
+            this.solveRes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.solveRes.Location = new System.Drawing.Point(119, 221);
+            this.solveRes.Name = "solveRes";
+            this.solveRes.Size = new System.Drawing.Size(137, 37);
+            this.solveRes.TabIndex = 17;
+            this.solveRes.Text = "Порахувати";
+            this.solveRes.UseVisualStyleBackColor = false;
+            this.solveRes.Click += new System.EventHandler(this.solveRes_Click);
             // 
-            // textBox1
+            // inputP
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(85, 174);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(205, 30);
-            this.textBox1.TabIndex = 16;
+            this.inputP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.inputP.Location = new System.Drawing.Point(85, 174);
+            this.inputP.Name = "inputP";
+            this.inputP.Size = new System.Drawing.Size(205, 30);
+            this.inputP.TabIndex = 16;
             // 
-            // label1
+            // while3Label
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(30, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(844, 125);
-            this.label1.TabIndex = 15;
-            this.label1.Text = resources.GetString("label1.Text");
+            this.while3Label.AutoSize = true;
+            this.while3Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.while3Label.Location = new System.Drawing.Point(30, 21);
+            this.while3Label.Name = "while3Label";
+            this.while3Label.Size = new System.Drawing.Size(844, 125);
+            this.while3Label.TabIndex = 15;
+            this.while3Label.Text = resources.GetString("while3Label.Text");
             // 
             // While3
             // 
@@ -92,11 +92,11 @@ namespace ISMPrakt04
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(872, 359);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.holderP);
             this.Controls.Add(this.result);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.solveRes);
+            this.Controls.Add(this.inputP);
+            this.Controls.Add(this.while3Label);
             this.Name = "While3";
             this.Text = "Знайти кількість дня і відстань";
             this.ResumeLayout(false);
@@ -106,10 +106,10 @@ namespace ISMPrakt04
 
         #endregion
 
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label holderP;
         private System.Windows.Forms.Label result;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button solveRes;
+        private System.Windows.Forms.TextBox inputP;
+        private System.Windows.Forms.Label while3Label;
     }
 }

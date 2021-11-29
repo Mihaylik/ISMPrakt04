@@ -30,9 +30,10 @@ namespace ISMPrakt04
         private void InitializeComponent()
         {
             this.result = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.solveRes = new System.Windows.Forms.Button();
+            this.inputN = new System.Windows.Forms.TextBox();
+            this.while2Label = new System.Windows.Forms.Label();
+            this.holderN = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // result
@@ -45,35 +46,45 @@ namespace ISMPrakt04
             this.result.TabIndex = 13;
             this.result.Text = "Результат:";
             // 
-            // button1
+            // solveRes
             // 
-            this.button1.BackColor = System.Drawing.Color.Lavender;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(262, 160);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(137, 37);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Порахувати";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.solveRes.BackColor = System.Drawing.Color.Lavender;
+            this.solveRes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.solveRes.Location = new System.Drawing.Point(262, 160);
+            this.solveRes.Name = "solveRes";
+            this.solveRes.Size = new System.Drawing.Size(137, 37);
+            this.solveRes.TabIndex = 12;
+            this.solveRes.Text = "Порахувати";
+            this.solveRes.UseVisualStyleBackColor = false;
+            this.solveRes.Click += new System.EventHandler(this.solveRes_Click);
             // 
-            // textBox1
+            // inputN
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(228, 113);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(205, 30);
-            this.textBox1.TabIndex = 11;
+            this.inputN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.inputN.Location = new System.Drawing.Point(228, 113);
+            this.inputN.Name = "inputN";
+            this.inputN.Size = new System.Drawing.Size(205, 30);
+            this.inputN.TabIndex = 11;
             // 
-            // label1
+            // while2Label
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(182, 68);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(251, 25);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Введіть ціле число N>0";
+            this.while2Label.AutoSize = true;
+            this.while2Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.while2Label.Location = new System.Drawing.Point(182, 68);
+            this.while2Label.Name = "while2Label";
+            this.while2Label.Size = new System.Drawing.Size(251, 25);
+            this.while2Label.TabIndex = 10;
+            this.while2Label.Text = "Введіть ціле число N>0";
+            // 
+            // holderN
+            // 
+            this.holderN.AutoSize = true;
+            this.holderN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.holderN.Location = new System.Drawing.Point(184, 116);
+            this.holderN.Name = "holderN";
+            this.holderN.Size = new System.Drawing.Size(27, 25);
+            this.holderN.TabIndex = 14;
+            this.holderN.Text = "N";
             // 
             // While2
             // 
@@ -81,10 +92,11 @@ namespace ISMPrakt04
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(672, 358);
+            this.Controls.Add(this.holderN);
             this.Controls.Add(this.result);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.solveRes);
+            this.Controls.Add(this.inputN);
+            this.Controls.Add(this.while2Label);
             this.Name = "While2";
             this.Text = "Найменше ціле число K, при якому виконується нерівність 3^k > N";
             this.ResumeLayout(false);
@@ -95,8 +107,9 @@ namespace ISMPrakt04
         #endregion
 
         private System.Windows.Forms.Label result;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button solveRes;
+        private System.Windows.Forms.TextBox inputN;
+        private System.Windows.Forms.Label while2Label;
+        private System.Windows.Forms.Label holderN;
     }
 }

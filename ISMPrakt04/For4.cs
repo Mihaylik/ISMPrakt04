@@ -28,28 +28,30 @@ namespace ISMPrakt04
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void solveRes_Click(object sender, EventArgs e)
         {
+            double resultVall;
             res.Text = "Результат: ";
             ForConsole4 f = new ForConsole4();
             int a = 0, b = 0;
             try
             {
-                a = int.Parse(textBox1.Text);
-                b = int.Parse(textBox2.Text);
+                a = int.Parse(inputA.Text);
+                b = int.Parse(inputB.Text);
                 if (a >= b) Clear("A повинне бути меньше B");
             }
             catch
             {
                 Clear("Введене не вірне значення");
             }
-            res.Text += f.Solve(a, b);
+            resultVall = f.Solve(a, b);
+            res.Text += resultVall;
         }
         void Clear(string m)
         {
             MessageBox.Show(m);
-            textBox1.Text = null;
-            textBox2.Text = null;
+            inputA.Text = null;
+            inputB.Text = null;
         }
 
     }

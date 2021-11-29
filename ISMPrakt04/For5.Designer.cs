@@ -30,10 +30,10 @@ namespace ISMPrakt04
         private void InitializeComponent()
         {
             this.result = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.solveRes = new System.Windows.Forms.Button();
+            this.inputN = new System.Windows.Forms.TextBox();
+            this.holderN = new System.Windows.Forms.Label();
+            this.for5Label = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // result
@@ -47,48 +47,48 @@ namespace ISMPrakt04
             this.result.Text = "Результат:";
             this.result.Click += new System.EventHandler(this.result_Click);
             // 
-            // button1
+            // solveRes
             // 
-            this.button1.BackColor = System.Drawing.Color.Lavender;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(128, 158);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(137, 37);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Порахувати";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.solveRes.BackColor = System.Drawing.Color.Lavender;
+            this.solveRes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.solveRes.Location = new System.Drawing.Point(128, 158);
+            this.solveRes.Name = "solveRes";
+            this.solveRes.Size = new System.Drawing.Size(137, 37);
+            this.solveRes.TabIndex = 8;
+            this.solveRes.Text = "Порахувати";
+            this.solveRes.UseVisualStyleBackColor = false;
+            this.solveRes.Click += new System.EventHandler(this.solveRes_Click);
             // 
-            // textBox1
+            // inputN
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(94, 111);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(205, 30);
-            this.textBox1.TabIndex = 7;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.inputN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.inputN.Location = new System.Drawing.Point(94, 111);
+            this.inputN.Name = "inputN";
+            this.inputN.Size = new System.Drawing.Size(205, 30);
+            this.inputN.TabIndex = 7;
+            this.inputN.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // label2
+            // holderN
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(50, 111);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(26, 25);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "N";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.holderN.AutoSize = true;
+            this.holderN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.holderN.Location = new System.Drawing.Point(50, 111);
+            this.holderN.Name = "holderN";
+            this.holderN.Size = new System.Drawing.Size(26, 25);
+            this.holderN.TabIndex = 6;
+            this.holderN.Text = "N";
+            this.holderN.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label1
+            // for5Label
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(48, 66);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(251, 25);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Введіть ціле число N>0";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.for5Label.AutoSize = true;
+            this.for5Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.for5Label.Location = new System.Drawing.Point(48, 66);
+            this.for5Label.Name = "for5Label";
+            this.for5Label.Size = new System.Drawing.Size(251, 25);
+            this.for5Label.TabIndex = 5;
+            this.for5Label.Text = "Введіть ціле число N>0";
+            this.for5Label.Click += new System.EventHandler(this.label1_Click);
             // 
             // For5
             // 
@@ -97,10 +97,10 @@ namespace ISMPrakt04
             this.BackColor = System.Drawing.Color.DarkViolet;
             this.ClientSize = new System.Drawing.Size(361, 332);
             this.Controls.Add(this.result);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.solveRes);
+            this.Controls.Add(this.inputN);
+            this.Controls.Add(this.holderN);
+            this.Controls.Add(this.for5Label);
             this.Name = "For5";
             this.Text = "Cумa 1! + 2! + 3! + … + N! ";
             this.ResumeLayout(false);
@@ -111,9 +111,9 @@ namespace ISMPrakt04
         #endregion
 
         private System.Windows.Forms.Label result;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button solveRes;
+        private System.Windows.Forms.TextBox inputN;
+        private System.Windows.Forms.Label holderN;
+        private System.Windows.Forms.Label for5Label;
     }
 }

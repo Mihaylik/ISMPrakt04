@@ -8,9 +8,10 @@ namespace ISMPrakt04ClassLib
 {
     public class ForConsole5
     {
-        public int Solve(int n)
+        public double Solve(int n)
         {
-            int res = 0, f = 1;
+            double res = 0;
+            int f = 1;
             for (int i = 1; i <= n; i++)
             {
                 for (int j = 1; j <= i; j++)

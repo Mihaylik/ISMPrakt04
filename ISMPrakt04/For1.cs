@@ -17,34 +17,31 @@ namespace ISMPrakt04
         {
             InitializeComponent();
         }
-        private void button1_Click(object sender, EventArgs e)
+        private void solveRes_Click(object sender, EventArgs e)
         {
+            double result;
             res.Text = "Результат: ";
             ForConsole1 f = new ForConsole1();
             int a = 0, b = 0;
             try
             {
-                a = int.Parse(textBox1.Text);
-                b = int.Parse(textBox2.Text);
+                a = int.Parse(inputA.Text);
+                b = int.Parse(inputB.Text);
                 if (a >= b) Clear("A повинне бути меньше B");
             }
             catch
             {
                 Clear("Введене не вірне значення");
             }
-            res.Text += f.Solve(a, b);
+            result = f.Solve(a, b);
+            res.Text += result;
 
         }
         void Clear(string m)
         {
             MessageBox.Show(m);
-            textBox1.Text = null;
-            textBox2.Text = null;
-        }
-
-        private void res_Click(object sender, EventArgs e)
-        {
-
+            inputA.Text = null;
+            inputB.Text = null;
         }
     }
 }
